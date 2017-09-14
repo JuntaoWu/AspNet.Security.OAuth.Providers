@@ -27,5 +27,7 @@ namespace AspNet.Security.OAuth.Weibo
         public const string TokenEndpoint = "https://api.weibo.com/oauth2/access_token";
 
         public const string UserInformationEndpoint = "https://api.weibo.com/2/users/show.json";
+
+        public const string RevokeAuthorizationEndpoint = "";
     }
 }

@@ -29,7 +29,7 @@ namespace AspNet.Security.OAuth.Weibo
 
             Scope.Add("email");
 
-            ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "id");
+            ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "id", ClaimValueTypes.UInteger64);
             ClaimActions.MapJsonKey(ClaimTypes.Name, "name");
             ClaimActions.MapJsonKey(ClaimTypes.Gender, "gender");
             ClaimActions.MapJsonKey("urn:weibo:screen_name", "screen_name");
